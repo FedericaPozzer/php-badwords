@@ -23,28 +23,33 @@ $newText = str_replace($word, "***", $text);
     <h4>
         <?php echo $_GET["textarea"] ?>
     </h4>
+    
+    <br>
 
     <h2>Lunghezza testo originale:</h2>
 
     <h4>
-        <?php echo strlen($text) ?> 
+        <?php echo strlen($text)  . " caratteri e spazi" ?> 
 
     </h4>
 
-     <h2>Il testo censurato è:</h2>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Il testo censurato è:</h2>
 
     <h4>
         <?php echo str_replace($word, "***", $text) ?>
     </h4>
 
+    <br>
+
     <h2>Lunghezza testo censurato:</h2>
 
     <h4>
-        <?php echo strlen($newText) ?> 
-
-    </h4>
-
-    
+        <?php echo strlen($newText) . " caratteri e spazi" ?> 
+    <h4>
 
 </body>
 </html>
