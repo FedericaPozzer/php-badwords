@@ -1,6 +1,8 @@
 <?php 
 
 $text = $_GET["textarea"];
+$word = $_GET["censoredWord"];
+$newText = str_replace($word, "***", $text);
 
 ?>
 
@@ -29,17 +31,18 @@ $text = $_GET["textarea"];
 
     </h4>
 
+     <h2>Il testo censurato è:</h2>
 
-<!-- 
+    <h4>
+        <?php echo str_replace($word, "***", $text) ?>
+    </h4>
 
+    <h2>Lunghezza testo censurato:</h2>
 
+    <h4>
+        <?php echo strlen($newText) ?> 
 
-
-    <h2>Il testo censurato è:</h2>
-
-
-
-    <h2>Lunghezza testo censurato:</h2> -->
+    </h4>
 
     
 
