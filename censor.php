@@ -1,3 +1,9 @@
+<?php 
+
+$text = $_GET["textarea"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +25,7 @@
     <h2>Lunghezza testo originale:</h2>
 
     <h4>
-        <?php echo strlen("textarea") ?>
+        <?php echo strlen($text) ?> 
 
     </h4>
 
