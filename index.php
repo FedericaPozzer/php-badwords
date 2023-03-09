@@ -9,7 +9,7 @@
 <body>
     
     <h2>Inserisici un testo</h2>
-    <form method="GET" action="./index2.html">
+    <form method="GET" action="./censor.php">
         <textarea name="textarea" cols="30" rows="10"> </textarea>
         <br>
         <br>
@@ -17,9 +17,6 @@
         <br>
         <input type="text" id="word-to-censor" name="censoredWord">
     </form>
-<?php
-echo "ciao";
-?>
 
 </body>
 </html>
